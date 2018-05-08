@@ -23,7 +23,7 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, 'dist')));
 
 // Set our api routes proxy to point to spring boot server
-app.use('/server', proxy('http://localhost:8080'));
+app.use('/server', proxy('http://bike-biketest.192.168.42.52.nip.io/bike-0.0.1-SNAPSHOT/server'));
 
 // Catch all other routes and return the index file
 app.get('*', (req, res) => {

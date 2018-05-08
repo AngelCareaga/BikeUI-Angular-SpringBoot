@@ -12,7 +12,9 @@ export class ViewRegistrationComponent implements OnInit {
 
   public bikeReg;
 
-  constructor(private bikeService: BikeService, private route: ActivatedRoute) { }
+  constructor(private bikeService: BikeService, private route: ActivatedRoute) {
+    this.bikeReg = '';
+  }
 
   ngOnInit() {
     this.getBikeReg(this.route.snapshot.params.id);

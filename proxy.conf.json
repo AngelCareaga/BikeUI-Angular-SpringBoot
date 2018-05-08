@@ -1,6 +1,6 @@
 {
 	"/server": {
-		"target": "http://localhost:8080",
+		"target": "http://bike-biketest.192.168.42.52.nip.io/bike-0.0.1-SNAPSHOT/server",
 		"secure": false,
     "changeOrigin": true,
     "logLevel": "debug",
@@ -9,3 +9,4 @@
     }
 	}
 }
+
